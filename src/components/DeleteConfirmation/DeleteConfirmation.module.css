@@ -1,0 +1,119 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  animation: fadeIn 0.15s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Inline modal that matches task card size */
+.inlineModal {
+  position: fixed;
+  background: #ffffff;
+  border: 2px solid #e53e3e;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  animation: slideUp 0.2s ease;
+  z-index: 10000;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(10px) scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #fed7d7;
+}
+
+.icon {
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #c53030;
+}
+
+.message {
+  margin: 0 0 0.75rem 0;
+  color: #2d3748;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+
+.message strong {
+  color: #000000;
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.cancelButton,
+.deleteButton {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cancelButton {
+  background: #e2e8f0;
+  color: #4a5568;
+}
+
+.cancelButton:hover {
+  background: #cbd5e0;
+  transform: scale(1.05);
+}
+
+.deleteButton {
+  background: #e53e3e;
+  color: #ffffff;
+}
+
+.deleteButton:hover {
+  background: #c53030;
+  transform: scale(1.05);
+  box-shadow: 0 2px 6px rgba(229, 62, 62, 0.4);
+}
+
+.deleteButton:active,
+.cancelButton:active {
+  transform: scale(0.95);
+}

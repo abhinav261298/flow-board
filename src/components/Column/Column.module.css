@@ -1,0 +1,94 @@
+.column {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100vh - 180px);
+  transition: all 0.3s ease;
+}
+
+.column.dropTarget {
+  background: #f0f9ff;
+  border: 2px dashed #667eea;
+  box-shadow: 0 8px 16px rgba(102, 126, 234, 0.2);
+  transform: scale(1.02);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin: 0;
+}
+
+.count {
+  background: #e2e8f0;
+  color: #4a5568;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.addTaskSection {
+  margin-bottom: 1rem;
+}
+
+.tasksList {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+  min-height: 200px;
+  /* Performance optimizations for large lists */
+  contain: layout style paint;
+  will-change: scroll-position;
+}
+
+.taskWrapper {
+  /* Optimize rendering performance */
+  contain: layout style paint;
+  content-visibility: auto;
+}
+
+.tasksList::-webkit-scrollbar {
+  width: 6px;
+}
+
+.tasksList::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.tasksList::-webkit-scrollbar-thumb {
+  background: #cbd5e0;
+  border-radius: 3px;
+}
+
+.tasksList::-webkit-scrollbar-thumb:hover {
+  background: #a0aec0;
+}
+
+.emptyState {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.emptyText {
+  color: #a0aec0;
+  font-size: 0.875rem;
+  margin: 0;
+}

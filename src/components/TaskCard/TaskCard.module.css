@@ -1,0 +1,105 @@
+.taskCard {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  cursor: grab;
+  transition: all 0.2s ease;
+}
+
+.taskCard:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+  border-color: #cbd5e0;
+}
+
+.taskCard:active {
+  cursor: grabbing;
+}
+
+.taskCard.dragging {
+  opacity: 0.4;
+  cursor: grabbing;
+  transform: scale(0.95);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.content {
+  margin-bottom: 0.75rem;
+}
+
+.title {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #2d3748;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #f7fafc;
+}
+
+.moveButtons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.moveButton {
+  background: #edf2f7;
+  border: none;
+  border-radius: 6px;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #4a5568;
+}
+
+.moveButton:hover {
+  background: #e2e8f0;
+  transform: scale(1.05);
+}
+
+.moveButton:active {
+  transform: scale(0.95);
+}
+
+.moveLeft:hover {
+  background: #bee3f8;
+  color: #2c5282;
+}
+
+.moveRight:hover {
+  background: #c6f6d5;
+  color: #276749;
+}
+
+.deleteButton {
+  background: #fed7d7;
+  border: none;
+  border-radius: 6px;
+  padding: 0.375rem 0.625rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #c53030;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.deleteButton:hover {
+  background: #fc8181;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+.deleteButton:active {
+  transform: scale(0.95);
+}
