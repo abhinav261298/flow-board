@@ -59,13 +59,9 @@ flow-board/
 ├── Documentation/               # Project documentation
 │   ├── ARCHITECTURE.md           # Architecture decisions
 │   ├── PROJECT_STRUCTURE.md      # This file
-│   ├── TEST_STRATEGY.md          # Testing approach
-│   ├── PHASE_4_SUMMARY.md        # Drag-drop implementation
-│   ├── PHASE_6_SUMMARY.md        # Performance optimization
-│   ├── PROGRESS_SUMMARY.md       # Project timeline
-│   ├── FIXES_APPLIED.md          # Bug fixes log
-│   ├── QUICK_START.md            # Quick reference
-│   └── TEST_DATA_GUIDE.md        # Test data generation
+│   ├── README.md                 # Build/run instructions
+│   └── CHAT_HISTORY.md           # Chat history with AI agent
+│   └── TEST_STRATEGY.md          # Testing strategy
 │
 ├── Configuration Files/
 │   ├── package.json              # Dependencies & scripts

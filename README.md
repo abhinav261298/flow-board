@@ -255,12 +255,9 @@ Comprehensive documentation is available:
 
 - **[ARCHITECTURE.md](./ARCHITECTURE.md)** - Architectural patterns, state management, drag-drop implementation
 - **[PROJECT_STRUCTURE.md](./PROJECT_STRUCTURE.md)** - Folder/module layout and organization
-- **[TEST_STRATEGY.md](./TEST_STRATEGY.md)** - Testing approach and coverage
 - **[CHAT_HISTORY.md](./CHAT_HISTORY.md)** - Development journey and decisions
-- **[PHASE_4_SUMMARY.md](./PHASE_4_SUMMARY.md)** - Drag-and-drop implementation
-- **[PHASE_6_SUMMARY.md](./PHASE_6_SUMMARY.md)** - Performance optimization
 - **[QUICK_START.md](./QUICK_START.md)** - Quick reference guide
-- **[TEST_DATA_GUIDE.md](./TEST_DATA_GUIDE.md)** - Test data generation
+- **[TEST_STRATEGY.md](./TEST_STRATEGY.md)** - Testing strategy
 
 ---
 
@@ -325,8 +322,8 @@ Comprehensive documentation is available:
 - [x] **README.md** - This file with build/run instructions
 - [x] **PROJECT_STRUCTURE.md** - Folder/module layout
 - [x] **ARCHITECTURE.md** - Patterns, hierarchy, state management, drag-drop
-- [x] **TEST_STRATEGY.md** - Testing coverage and rationale
 - [x] **CHAT_HISTORY.md** - Development journey and decisions
+- [x] **TEST_STRATEGY.md** - Testing strategy
 
 ---
 

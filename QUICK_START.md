@@ -84,24 +84,6 @@ location.reload();
 
 ---
 
-## Fix Applied Today
-
-✅ **Delete modal z-index fixed** - No longer hidden behind tasks  
-✅ **Redux store exposed** - Available as `window.store` in dev mode  
-✅ **Auto-generate tasks** - Use `npm run start:100` to load test data  
-
----
-
-## Documentation
-
-- **`TEST_DATA_GUIDE.md`** - Complete test data generation guide
-- **`PHASE_6_SUMMARY.md`** - Performance optimization details
-- **`DRAG_DROP_GUIDE.md`** - Drag-and-drop implementation
-- **`FIXES_APPLIED.md`** - Today's fixes explained
-- **`PROGRESS_SUMMARY.md`** - Overall project status
-
----
-
 ## Project Structure
 
 ```
